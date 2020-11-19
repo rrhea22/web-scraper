@@ -1,0 +1,14 @@
+from bs4 import BeautifulSoup
+import urllib.request
+import re
+
+html = urllib.request.urlopen('https://zhuanlan.zhihu.com/p/291238864')
+
+soup = BeautifulSoup(html,"html.parser")
+content = soup.get_text()
+result_list = re.findall('[a-zA-Z]+',content)
+list = []
+for w in result_list: 
+    if w not in list:
+        list.append(w)
+print (list)
