@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Aug 14 16:09:16 2020
 
-@author: rong2
-"""
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
